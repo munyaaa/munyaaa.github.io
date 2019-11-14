@@ -6,7 +6,7 @@ import './App.scss';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" >
             <Home />
